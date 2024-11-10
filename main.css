@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+:root {
+	/* colors primary */
+	--very-dark-magenta: hsl(300, 43%, 22%);
+	--soft-pink: hsl(333, 80%, 67%);
+
+	/* colors neutral */
+	--dark-grayish-magenta: hsl(303, 10%, 53%);
+	--light-grayish-magenta: hsl(300, 24%, 96%);
+	--white: hsl(0, 0%, 100%);
+}
+body{
+    font-family: 'Spartan', sans-serif;
+}
+main{
+	width: 85%;
+	margin:5rem auto;
+	display: grid;
+	align-content: center;
+	height: 100dvh;
+}
+.header-content{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 7rem;
+}
+.content{
+	align-content: center;
+}
+h1{
+	font-size: 3.5rem;
+	font-weight: 700;
+	color: var(--very-dark-magenta);
+	line-height: 1.1;
+}
+.content p{
+	color: var(--dark-grayish-magenta);
+	line-height: 1.7;
+	font-weight: 500;
+}
+.ratings{
+	display: grid;
+	gap: 1rem;
+	align-content: center;
+}
+.review, .report, .tech{
+	width: 90%;
+	background-color: var(--light-grayish-magenta);
+	border-radius: .5rem;
+	padding: 1.25rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.review{
+	justify-self: flex-start;
+}
+.report{
+	justify-self: center;
+}
+.tech{
+	justify-self: flex-end;
+}
+.ratings span{
+	color: var(--very-dark-magenta);
+	font-weight: 700;
+}
+.review-cards{
+	height: 85%;
+	margin-top: 5rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+}
+.card{
+	justify-self: start;
+	background-color: var(--very-dark-magenta);
+	padding: 1.5rem;
+	border-radius: .5rem;
+}
+.card:nth-child(1){
+	align-self: flex-start;
+}
+.card:nth-child(2){
+	align-self: center;
+}
+.card:nth-child(3){
+	align-self: flex-end;
+}
+.info{
+	display: flex;
+	gap: 2rem;
+}
+.info img{
+	width: 2.5rem;
+	height: auto;
+	border-radius: 50%;
+}
+.info .txt{}
+.info .txt h4{
+	color: var(--white);
+	font-weight: 700;
+	line-height: 1.7;
+}
+.info .txt span{
+	color: var(--soft-pink);
+}
+.card p{
+	color: var(--white);
+	margin-top: 1.75rem;
+	line-height: 1.7;
+}
